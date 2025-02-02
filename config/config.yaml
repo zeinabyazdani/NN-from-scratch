@@ -1,0 +1,25 @@
+SEED: 123
+
+# Model hyperparameters
+num_layers: 1
+num_neurons: [64]
+batch_size: 64
+learning_rate: 0.0001
+num_epochs: 50
+momentum: 0.7
+loss: 'ce' # MSE or CE
+normalization: 'std' # None or 'std'
+
+# Dataset parameters
+dataset:
+  path_train: data\dataset\Arab MNIST (train)
+  path_test: data\dataset\Arab MNIST (test)
+  file_train_names: train.csv
+  file_test_names: test.csv
+  num_classes: 10
+  train_split: 0.2
+
+# Weight initialization
+bias: 0
+w_mean: 0
+w_std: 0.1
